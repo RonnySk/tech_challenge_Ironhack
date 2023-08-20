@@ -25,16 +25,9 @@ function HomePage() {
           <div className="" key={index}>
             <div className="">
               <h2>{onePhone.name}</h2>
-              <p>{onePhone.description}</p>
-              <h3>Technical description</h3>
-              <ul>
-                <li>Processor: {onePhone.processor}</li>
-                <li>Ram: {onePhone.ram}</li>
-                <li>Screem size: {onePhone.screem}</li>
-                <li>Manufacturer: {onePhone.manufacturer}</li>
-              </ul>
-              <h4>Price: {onePhone.price}</h4>
-              <Link className="openMessenger-link" to={`phones/${onePhone.id}`}>
+              <img src=""></img>
+
+              <Link className="" to={`/phones/${onePhone.id}`}>
                 details
               </Link>
             </div>
