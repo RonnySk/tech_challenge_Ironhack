@@ -18,22 +18,20 @@ function HomePage() {
   }, []);
 
   return (
-    <div>
+    <div className="home-container">
       <h1>The Phone Cave</h1>
+
       {allPhones.map((onePhone, index) => {
         return (
-          <div className="" key={index}>
-            <div className="">
-              <h2>{onePhone.name}</h2>
-              <img
-                src={`images/${onePhone.imageFileName}`}
-                alt={onePhone.name}
-              ></img>
-
-              <Link className="" to={`/phones/${onePhone.id}`}>
-                details
-              </Link>
-            </div>
+          <div className="phone-container" key={index}>
+            <h2>{onePhone.name}</h2>
+            <img
+              src={`images/${onePhone.imageFileName}`}
+              alt={onePhone.name}
+            ></img>
+            <Link className="details-link" to={`/phones/${onePhone.id}`}>
+              Details
+            </Link>
           </div>
         );
       })}

@@ -21,7 +21,7 @@ function PhoneDetaisl() {
   }, []);
 
   return (
-    <div>
+    <div className="details-container">
       <h2>{onePhone.name}</h2>
       <p>{onePhone.description}</p>
       <h3>Technical description</h3>
@@ -31,7 +31,7 @@ function PhoneDetaisl() {
         <li>Screem size: {onePhone.screem}</li>
         <li>Manufacturer: {onePhone.manufacturer}</li>
       </ul>
-      <h4>Price: {onePhone.price}</h4>
+      <h4>Price: €{onePhone.price}</h4>
     </div>
   );
 }
