@@ -11,9 +11,9 @@ Code exercises for ENTER challenge, Bootcamp Ironhack career week.
 - express
 
 ## How to run
-npm i 
-open one terminal for "backend" folder and run "npm run dev"
-simultaneously open another terminal for "client" folder and run "nodemon". 
+- npm i 
+- open one terminal for "backend" folder and run "npm run dev"
+- simultaneously open another terminal for "client" folder and run "nodemon". 
 
 ## Author
 Ronny Skaraboto 
