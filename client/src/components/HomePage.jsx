@@ -26,10 +26,11 @@ function HomePage() {
           <div className="phone-container" key={index}>
             <h2>{onePhone.name}</h2>
             <img
+              className="phone-img"
               src={`images/${onePhone.imageFileName}`}
               alt={onePhone.name}
             ></img>
-            <Link className="details-link" to={`/phones/${onePhone.id}`}>
+            <Link className="link-btn" to={`/phones/${onePhone.id}`}>
               Details
             </Link>
           </div>

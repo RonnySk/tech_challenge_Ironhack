@@ -15,22 +15,25 @@
 .phone-container h2 {
   margin: 10px 0;
 }
-.phone-container img {
+.phone-img {
   height: 70%;
   width: 80%;
 }
 
-.details-link {
+.link-btn {
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .details-container{
   display: flex;
   flex-direction: column;
   align-items: center;
+  list-style-type: none;
 }
 
 .details-container p {
   width: 80%;
   text-align: justify;
 }
+

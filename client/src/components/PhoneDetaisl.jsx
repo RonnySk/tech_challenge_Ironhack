@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function PhoneDetaisl() {
   const [onePhone, setOnePhone] = useState({});
@@ -23,6 +23,11 @@ function PhoneDetaisl() {
   return (
     <div className="details-container">
       <h2>{onePhone.name}</h2>
+      <img
+        className="phone-img"
+        src={`/images/${onePhone.imageFileName}`}
+        alt={onePhone.name}
+      ></img>
       <p>{onePhone.description}</p>
       <h3>Technical description</h3>
       <ul>
@@ -32,6 +37,9 @@ function PhoneDetaisl() {
         <li>Manufacturer: {onePhone.manufacturer}</li>
       </ul>
       <h4>Price: €{onePhone.price}</h4>
+      <Link className="link-btn" to="/">
+        Back to Phones
+      </Link>
     </div>
   );
 }
