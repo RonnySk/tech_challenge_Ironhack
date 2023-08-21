@@ -25,7 +25,10 @@ function HomePage() {
           <div className="" key={index}>
             <div className="">
               <h2>{onePhone.name}</h2>
-              <img src=""></img>
+              <img
+                src={`images/${onePhone.imageFileName}`}
+                alt={onePhone.name}
+              ></img>
 
               <Link className="" to={`/phones/${onePhone.id}`}>
                 details
